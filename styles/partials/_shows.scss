@@ -1,0 +1,146 @@
+.shows * {
+  margin: 0;
+  padding: 0;
+}
+
+// Hero Image
+#desktop-table {
+  display: none;
+}
+.shows__hero {
+  &__image {
+    background-image: url(../../assets/images/shows-hero.jpg);
+    width: 100vw;
+    height: 472px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+
+    &__content {
+      margin: 0 5%;
+      width: 100%;
+
+      &-subtitle {
+        font-size: 14px;
+        line-height: 22px;
+        color: white;
+      }
+      &-title {
+        color: white;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: "AvenirNextBold";
+      }
+    }
+  }
+}
+
+.shows {
+  margin: 35px 5% 0 5%;
+
+  &-title {
+    margin-bottom: 40px;
+  }
+}
+
+.normal {
+  padding-bottom: 14px;
+  font-weight: lighter;
+}
+
+.bold {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.shows-class {
+  color: $silver;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+tbody {
+  width: 100%;
+}
+
+.shows-btn {
+  background: $black;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: AvenirNextRegular;
+  width: 100%;
+  padding: 10px 0;
+}
+.shows-btn-container {
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.shows__container {
+  display: flex;
+  width: 100%;
+}
+
+#mobile-table {
+  display: table;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  thead {
+    width: 100%;
+  }
+
+  #desktop-table {
+    display: table;
+    width: 100%;
+  }
+  #mobile-table {
+    display: none;
+  }
+  tr {
+    width: 100%;
+  }
+
+  .shows {
+    margin: 0 3.125%;
+    &-title {
+      font-size: 36px;
+    }
+
+    &-class {
+      color: $black;
+      text-transform: capitalize;
+      font-size: 24px;
+      padding: 0;
+    }
+  }
+  .shows-btn {
+    background: $black;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: AvenirNextRegular;
+    width: 100%;
+    padding: 15px 25px;
+  }
+  .shows-btn-container {
+    padding: 16px;
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #desktoptable {
+    display: inline-block;
+  }
+  .shows {
+    margin: 0 12.5%;
+    display: block;
+  }
+}

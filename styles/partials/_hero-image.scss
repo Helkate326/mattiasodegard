@@ -1,0 +1,52 @@
+// Mobile
+.hero {
+  &__image {
+    background-image: url(../../assets/images/shows-hero.jpg);
+    width: 100vw;
+    height: 472px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+  }
+
+  &__text {
+    font-family: "AvenirNextBold";
+    margin: 0;
+    color: $white;
+    font-size: 25px;
+    line-height: 28px;
+    width: 70%;
+    margin-left: 16px;
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  .hero {
+    &__image {
+      height: 400px;
+    }
+
+    &__text {
+      margin-left: 5%;
+      font-size: 60px;
+      line-height: 68px;
+      width: 70%;
+      margin-left: 16px;
+    }
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 1440px) {
+  .hero {
+    &__image {
+      height: 600px;
+    }
+
+    &__text {
+      margin: 12.5%;
+      width: 40%;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.header {
+    background-color: $black;
+    height: 80px;
+
+    
+    
+    &__image    {
+        padding-top: 16px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    &__nav  {
+        text-decoration: none;
+
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            
+            &-item.active {
+                border-bottom: 4px solid $white;
+            }
+            
+            
+            &-item    {
+                width: 50%;
+                text-align: center;
+                padding-bottom: 6px;
+                list-style: none;
+                
+                
+                &-text  {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+ul  {
+    padding: 0;
+}
+
+
+
+
+
+
+// tablet
+@media screen and (min-width: 768px)    {   
+    .header {
+        background-color: $black;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        
+
+        &-link  {
+            margin: 0 0;
+            padding-left: 5%;
+            margin-right: 10%;
+        }
+        
+        &__image    {
+            padding-top: 0;
+            margin: 0 0;
+            padding-left: 5%;
+            margin-right: 10%;
+            display: inline-block;
+
+        }
+        
+        
+        &__nav  {
+            text-decoration: none;
+
+
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                
+                &-item.active {
+                    border-bottom: 5px solid $white;
+                }
+                
+                
+                &-item    {
+                    text-align: center;
+                    list-style: none;
+                    width: fit-content;
+                    height: 80px;
+                    border-bottom: 5px solid transparent;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 80px;
+
+                    
+                    &-text  {
+                        text-decoration: none;
+                        color: $white;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// desktop
+
+@media screen and (min-width: 1440px)   {
+    .header *   {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: $black;
+        height: 80px;
+
+        &-link  {
+            margin: 0 0;
+            margin-left: 12.5%;
+            margin-right: 3.8888%;
+        }
+
+        &__image {
+            margin-left: 12.5%;
+            margin-right: 3.8888%;
+        }
+        
+        &__nav__list-item  {
+            margin-right: 56px;
+
+        }
+    }
+}

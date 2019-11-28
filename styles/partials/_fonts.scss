@@ -1,0 +1,63 @@
+@font-face  {
+    font-family: 'AvenirNextRegular';
+    src: url(../../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf);
+}
+
+@font-face  {
+    font-family: 'AvenirNextDemi';
+    src: url(../../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf);
+}
+
+@font-face  {
+    font-family: 'AvenirNextBold';
+    src: url(../../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf);
+}
+// mobile
+h1  {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h2  {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+h4  {
+    font-size:  13px;
+    line-height: 18px; 
+}
+
+h5  {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+// Desktop
+@media screen and (min-width: 768px) {
+    h1  {
+    font-size: 60px;
+    line-height: 68px;
+    }
+
+    h2  {
+    font-size:  24px;
+    line-height: 32px; 
+    }
+    
+    h3  {
+    font-size: 16px;
+    line-height: 24px;
+    }
+
+    h4    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    h5 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+    

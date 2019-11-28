@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>BandSite</title>
+  </head>
+
+  <body>
+    <!-- Header and Nav bar begins -->
+    <header class="header">
+      <!-- logo -->
+      <a class="header-link" href="./index.html"
+        ><img
+          class="header__image"
+          src="./assets/logo/Logo-bandsite.png"
+          alt="BandSite Logo"
+      /></a>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__list-item ">
+            <a class="header__nav__list-item-text" href="./index.html"
+              >Biography</a
+            >
+          </li>
+          <li class="header__nav__list-item active">
+            <a class="header__nav__list-item-text" href="./shows.html">Shows</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header and Nav bar ends -->
+
+    <!-- Hero image -->
+    <section class="shows__hero">
+      <div class="shows__hero__image">
+        <div class="shows__hero__image__content">
+          <h1 class="shows__hero__image__content-subtitle">Mother Mother</h1>
+          <h1 class="shows__hero__image__content-title">
+            Dance and Cry - It's alright
+          </h1>
+          <iframe
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/519996666&color=%231d88eb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Hero image ends -->
+
+    <section class="shows">
+      <h1 class="shows-title">Shows</h1>
+
+      <table id="mobile-table"></table>
+      <table id="desktop-table"></table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__contain">
+        <div class="footer__contain-header">
+          <h1 class="footer__contain-title">get in touch</h1>
+          <!-- Social media icons -->
+          <div class="footer__contain__icons">
+            <img
+              class="footer__contain-img"
+              src="./assets/icons/PNG/Icon-instagram.png"
+              alt=""
+            />
+            <img
+              class="footer__contain-img middle"
+              src="./assets/icons/PNG/Icon-facebook.png"
+              alt=""
+            />
+            <img
+              class="footer__contain-img"
+              src="./assets/icons/PNG/Icon-twitter.png"
+              alt=""
+            />
+          </div>
+          <img
+            class="footer__contain-logo"
+            src="./assets/logo/Logo-bandsite.png"
+            alt="BandSite Logo"
+          />
+        </div>
+
+        <div class="footer__contain__contact">
+          <!-- Contacts #1 -->
+          <div class="footer__contain__contact__box">
+            <h2 class="footer__contain__contact__box-title">richard rovner</h2>
+            <h2 class="footer__contain__contact__box-subtitle">
+              the bees knees managment
+            </h2>
+            <h5 class="footer__contain__contact__box-contact">
+              460 King Street West Toronto, Ontario M5V 1L7
+            </h5>
+            <h5 class="footer__contain__contact__box-contact">
+              info@thebeesknees.com
+            </h5>
+          </div>
+          <!-- Contacts #2 -->
+          <div class="footer__contain__contact__box footer-middle">
+            <h2 class="footer__contain__contact__box-title">Marsha Vlasic</h2>
+            <h2 class="footer__contain__contact__box-subtitle">
+              Artist Group International
+            </h2>
+            <h5 class="footer__contain__contact__box-contact">
+              Booking Agent for US / South America / Japan
+            </h5>
+            <h5 class="footer__contain__contact__box-contact">
+              marsha.vlasic@artistgrp.com
+            </h5>
+          </div>
+          <!-- Contacts #3 -->
+          <div class="footer__contain__contact__box">
+            <h2 class="footer__contain__contact__box-title">Russel Warby</h2>
+            <h2 class="footer__contain__contact__box-subtitle">
+              William Morrir Entertainment
+            </h2>
+            <h5 class="footer__contain__contact__box-contact">
+              Booking Agent for UK / EU / AU
+            </h5>
+            <h5 class="footer__contain__contact__box-contact">
+              RLW@wmeentertainment.com
+            </h5>
+          </div>
+        </div>
+        <h4 class="footer__contain-copyright">
+          Copyright The Bees Knees © 2018 All Rights Reserved
+        </h4>
+      </div>
+    </footer>
+    <script src="./scripts/shows.js"></script>
+  </body>
+</html>
